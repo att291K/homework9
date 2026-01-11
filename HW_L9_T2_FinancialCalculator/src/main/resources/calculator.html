@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inputFields">
+        <h1>Калькулятор доходности вклада</h1>
+        <form action="finance" method="POST">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Сумма на момент открытия</td>
+                        <td>
+                            <label>
+                                <input type="text" placeholder="100 000" name="summ" class="input" required/>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Процентная ставка</td>
+                        <td>
+                            <label>
+                                <input type="text" placeholder="10" name="percent" class="input" required/>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Срок вклада</td>
+                        <td>
+                            <label>
+                                <input type="text" placeholder="5" name="years" class="input" required/>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" id="calc" value="Посчитать">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
